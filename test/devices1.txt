@@ -1,0 +1,3 @@
+192.168.0.254,admin,cisco
+192.168.0.253,admin,cisco1
+192.168.0.252,admin,cisco2

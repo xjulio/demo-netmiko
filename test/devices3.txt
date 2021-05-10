@@ -1,0 +1,2 @@
+192.168.0.253,admin,cisco
+192.168.0.500,admin,cisco
