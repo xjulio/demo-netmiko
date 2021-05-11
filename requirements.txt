@@ -1,3 +1,5 @@
 netmiko
 requests
 pytest
+xmltodict
+pyaml

@@ -1,9 +1,17 @@
-from netmiko import ConnectHandler
-import getpass
-
-
 class Device:
+    """Classe para respresentar um disposivo
+    """
     def __init__(self, ip, user, password, hostname=None, mac=None, type=None):
+        """Construtor
+
+        Args:
+            ip ([type]): [description]
+            user ([type]): [description]
+            password ([type]): [description]
+            hostname ([type], optional): [description]. Defaults to None.
+            mac ([type], optional): [description]. Defaults to None.
+            type ([type], optional): [description]. Defaults to None.
+        """
         self.hostname = hostname
         self.ip = ip
         self.user = user
@@ -11,15 +19,11 @@ class Device:
         self.mac = mac
         self.type = type
 
-    def __str__(self) -> str:
+    def __str__(self) -> str:     
         return self.hostname + " " + self.ip + " " + self.mac
 
-
-def main():
-    router = Device(hostname="router01", ip="192.168.0.254", user="admin", password="cisco", mac="c0:7b:bc:99:f7")   
-
 if __name__ == "__main__":
-    main()
+    raise NotImplementedError("Uso direto nao permitido, use a diretiva import!")
 
 """
 lista = []
